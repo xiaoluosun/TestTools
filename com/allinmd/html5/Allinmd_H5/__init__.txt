@@ -1,8 +1,0 @@
-*** Settings ***
-Library           AutoItLibrary
-Library           UtilsLibrary
-Library           Selenium2Library
-Library           AppiumLibrary
-Library           RequestsLibrary
-Library           DatabaseLibrary
-Library           Collections
