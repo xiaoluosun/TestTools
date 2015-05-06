@@ -1,0 +1,77 @@
+*** Settings ***
+Library           Collections
+Library           Selenium2Library
+Library           UtilsLibrary
+Library           AppiumLibrary
+
+*** Keywords ***
+打开手机浏览器
+    [Arguments]    ${url}    ${browser}
+    ${capabilities}=    Create Dictionary
+    Set To Dictionary    ${capabilities}    automationName    Selendroid
+    Set To Dictionary    ${capabilities}    platformVersion    4.1.1
+    Set To Dictionary    ${capabilities}    platform    WINDOWS
+    Set To Dictionary    ${capabilities}    deviceName    MI_2A
+    Set To Dictionary    ${capabilities}    platformName    Android
+    Set To Dictionary    ${capabilities}    udid    94122ad8
+    Log Dictionary    ${capabilities}
+    Close Browser
+    Close All Browsers
+    Set Selenium Timeout    30
+    Open Browser    ${url}    browser=${browser}    remote_url=http://127.0.0.1:4723/wd/hub    desired_capabilities=${capabilities}
+
+邮箱注册
+    ${random}=    Evaluate    random.randint(0,10000)    random,sys
+    ${username}    Set Variable    ${random}test@smc.com
+    Input Text    xpath=.//*[@id='email']    ${username}
+    Click Element    xpath=.//*[@id='loginBtn']
+    Input Text    xpath=.//*[@id='passwd']    123456
+    Click Element    xpath=.//*[@id='loginBtn']
+    Sleep    10s
+    Save User Email    ${username}
+
+手机注册
+    ${temp}=    Evaluate    int(time.time())    time
+    ${temps}=    Evaluate    str(${temp})
+    ${phone}=    Set Variable    177${temps[0:8]}
+    Input Text    xpath=.//*[@id='email']    ${phone}
+    Click Element    xpath=.//*[@id='loginBtn']
+    Sleep    5s
+    ${phone_code}=    Get Phone    http://192.168.1.33:8080/allin_manager_platform//logSmsAction!list    ${phone}
+    Input Text    xpath=.//*[@id='valiCode']    ${phone_code}
+    Click Element    xpath=.//*[@id='loginBtn']
+    Input Text    xpath=.//*[@id='passwd']    123456
+    Click Element    xpath=.//*[@id='loginBtn']
+    Sleep    10s
+    Save User Phone    ${phone}
+
+关闭浏览器
+    Close All Browsers
+
+医师认证
+    Title Should Be    医师认证
+    ${random}=    Evaluate    random.randint(10000000,100000000)    random,sys
+    ${lastname}=    Get Lastname
+    ${firstname}=    Get FirstName
+    Selenium2Library.Input Text    id=lastName    ${lastname}
+    Selenium2Library.Input Text    xpath=.//*[@id='firstName']    ${firstname}
+    Select From List By Value    xpath=.//*[@id='certificate']    6
+    Selenium2Library.Input Text    xpath=.//*[@id='attCode']    ys${random}
+    Choose File    xpath=.//*[@id='file1']    //storage//sdcard0//TEMP//IMG_0679.JPG
+    Wait Until Page Contains Element    xpath=/html/body/section[1]/div[4]/div/a[2]    15s    Error:元素不可见
+    Selenium2Library.Click Element    xpath=/html/body/section[1]/div[4]/div/a[2]
+    Selenium2Library.Click Element    id=companyChoose
+    Selenium2Library.Click Element    xpath=.//*[@id='sProvince']/div[2]/div[1]/img
+    Selenium2Library.Input Text    xpath=.//*[@id='seachKey']    北京大学第三医院
+    Sleep    1.5s
+    Selenium2Library.Click Element    xpath=.//*[@id='search_list']/li
+    Selenium2Library.Click Element    id=medicalTitleChoose
+    Selenium2Library.Click Element    xpath=.//*[@id='medical01']/li[1]/div
+    Selenium2Library.Click Element    xpath=.//*[@id='medicalTitleSave']
+    Selenium2Library.Click Element    id=areaExpertiseChoose
+    Selenium2Library.Click Element    xpath=.//*[@id='areasExpertisePage']/div[3]/ul/li[1]/div
+    Selenium2Library.Click Element    xpath=.//*[@id='areasExpertiseSave']
+    Sleep    1.5s
+    Selenium2Library.Click Element    xpath=.//*[@id='submit']
+    Sleep    5s
+    [Teardown]    关闭浏览器
