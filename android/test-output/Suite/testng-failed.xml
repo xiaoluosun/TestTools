@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [Suite]" skipfailedinvocationcounts="true">
+  <parameter name="GLOBAL_PASSWORD" value="111111"/>
+  <parameter name="LOGIN_PHONE_USER" value="17700010000"/>
+  <parameter name="LOGIN_EMAIL_USER" value="smc13800@163.com"/>
+  <listeners>
+    <listener class-name="com.runtime.listener.ScreenshotListener"/>
+  </listeners>
+  <test name="test(failed)">
+    <classes>
+      <class name="com.allinmd.android.ForGetPWEmailCase_debug">
+        <methods>
+          <include name="emailFindPW"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.allinmd.android.ForGetPWEmailCase_debug -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

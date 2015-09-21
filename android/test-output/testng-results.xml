@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="74107" started-at="2015-09-18T07:59:52Z" finished-at="2015-09-18T08:01:06Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="74107" started-at="2015-09-18T07:59:52Z" finished-at="2015-09-18T08:01:06Z">
+      <class name="com.allinmd.android.ForGetPWEmailCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.allinmd.android.ForGetPWEmailCase@7a31f737]" name="setUp" is-config="true" duration-ms="18412" started-at="2015-09-18T15:59:52Z" finished-at="2015-09-18T16:00:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emailFindPW(java.lang.String, java.lang.String)[pri:0, instance:com.allinmd.android.ForGetPWEmailCase@7a31f737]" name="emailFindPW" duration-ms="50456" started-at="2015-09-18T16:00:11Z" finished-at="2015-09-18T16:01:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[smc13800@163.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[111111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailFindPW -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.allinmd.android.ForGetPWEmailCase@7a31f737]" name="tearDown" is-config="true" duration-ms="5227" started-at="2015-09-18T16:01:01Z" finished-at="2015-09-18T16:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.allinmd.android.ForGetPWEmailCase -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>

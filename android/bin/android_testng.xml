@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2"  configfailurepolicy="skip" time-out="200000" skipfailedinvocationcounts="true" preserve-order="true" > 
+	<parameter name="GLOBAL_PASSWORD" value="111111" />
+	<parameter name="LOGIN_EMAIL_USER" value="smc13800@163.com" />
+	<parameter name="LOGIN_PHONE_USER" value="17700010000" />
+	<listeners>
+		<listener class-name="com.runtime.listener.ScreenshotListener" />
+	</listeners>
+	<test name="case01-邮箱注册-跳过认证" enabled="false" > 
+		<groups>
+		</groups>
+		<classes>
+			<class name="com.allinmd.android.RegEmailCase">
+				<methods>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="case02-手机注册-跳过认证" enabled="false" > 
+		<classes>
+			<class name="com.allinmd.android.RegPhoneCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case03-邮箱注册-医师认证"  enabled="false" > 
+		<classes>
+			<class name="com.allinmd.android.RegAuthEmailCase">
+			</class>
+		</classes>	
+	</test>
+	<test name="case04-手机注册-医师认证" enabled="false" > 
+		<classes>
+			<class name="com.allinmd.android.RegAuthPhoneCase">
+			</class>
+		</classes>	
+	</test>
+	<test name="case05-邮箱登录-退出登录" enabled="false" > 
+		<classes>
+			<class name="com.allinmd.android.LoginEmailCase">
+			</class>
+		</classes>	
+	</test>
+	<test name="case06-手机登录-退出登录" enabled="false" > 
+		<classes>
+			<class name="com.allinmd.android.LoginPhoneCase">
+			</class>
+		</classes>	
+	</test>
+	<!-- 依赖case01-邮箱注册-跳过认证 -->>
+	<test name="case07-未登录-病例终端页权限判断" enabled="false" >	
+		<classes>
+			<class name="com.allinmd.android.NotLoginCaseAccessCase">
+			</class>
+		</classes>
+	</test>	
+	<test name="case08-未登录-话题终端页权限判断" enabled="false" >	
+		<classes>
+			<class name="com.allinmd.android.NotLoginTopicAccessCase">
+			</class>
+		</classes>
+	</test>		
+	<test name="case09-未认证-病例终端页权限判断" enabled="false" >	
+		<classes>
+			<class name="com.allinmd.android.NotAuthCaseAccessCase">
+			</class>
+		</classes>
+	</test>		
+	<test name="case10-未认证-话题终端页权限判断" enabled="false" >	
+	    <parameter name="not_auth_user" value="17700010001" />
+		<classes>
+			<class name="com.allinmd.android.NotAuthTopicAccessCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case11-唯医登录-修改密码" enabled="false" >
+	    <parameter name="username" value="smc138@163.com" />
+	    <parameter name="new_password" value="123456" />
+		<classes>
+			<class name="com.allinmd.android.UpdatePasswordCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case12-邮箱-忘记密码" enabled="false" >	
+	   	<parameter name="username" value="smc13800@163.com" />
+		<classes>
+			<class name="com.allinmd.android.ForGetPWEmailCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case13-手机-忘记密码" enabled="false" >	
+		<classes>
+			<class name="com.allinmd.android.ForGetPWPhoneCase">
+			</class>
+		</classes>
+	</test>	
+	<test name="case14-邮箱CAOS登录 -退出登录" enabled="false" >	
+	    <parameter name="caos_username" value="testcaos@smc.com" />
+		<classes>
+			<class name="com.allinmd.android.CAOSLoginEmailCase">
+			</class>
+		</classes>
+	</test>	
+	<test name="case15-手机CAOS登录 -退出登录" enabled="false" >	
+	    <parameter name="caos_username" value="17700008800" />
+		<classes>
+			<class name="com.allinmd.android.CAOSLoginPhoneCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case16-病例列表-排序并筛选" enabled="true" >	
+		<classes>
+			<class name="com.allinmd.android.SortCaseListCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case17-话题列表-排序并筛选" enabled="true" >	
+		<classes>
+			<class name="com.allinmd.android.SortTopicListCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case18-视频列表-排序并筛选" enabled="true" >	
+		<classes>
+			<class name="com.allinmd.android.SortVideoListCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case19-搜索-输入医师名-结果验证" enabled="true" >
+	    <parameter name="authName" value="王岩" />
+		<classes>
+			<class name="com.allinmd.android.SearchAutherCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case20-搜索-输入医学关键词-结果验证" enabled="true" >
+	    <parameter name="keyword" value="关节" />	
+		<classes>
+			<class name="com.allinmd.android.SearchKeywordCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case21-标签列表-切换资源并排序" enabled="true" >
+		<classes>
+			<class name="com.allinmd.android.SortSubscribeListCase">
+			</class>
+		</classes>
+	</test>
+	<test name="case22-病例-发布/编辑" enabled="false" >
+	    <parameter name="pub_case_title" value="男性，61岁，渐进性活动后呼吸困难五年" />
+	    <parameter name="pub_case_age" value="61" />
+	    <parameter name="pub_main_suit" value="渐进性活动后呼吸困难五年，明显加重伴下肢浮肿一个月" />
+	    <parameter name="pub_case_talk" value="脆骨病又称成骨不全，是一种以骨骼脆性增加及胶原代谢紊乱为特征的全身性结缔组织疾病，其临床特征为下肢易发和多发骨折，骨折后骨折端常常出现成角或弓形畸形，严重影响儿童生长发育。" />
+		<parameter name="edit_case_age" value="60" />
+		<classes>
+		    <class name="com.allinmd.android.PubEditCaseCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case23-病例-个人中心查看发布/删除" enabled="false" >
+	    <parameter name="pub_case_title" value="男性，61岁，渐进性活动后呼吸困难五年" />
+		<classes>
+		    <class name="com.allinmd.android.CheckDeleteCaseCase">
+		    </class>
+		</classes>
+	</test>	
+	<test name="case24-话题-发布/个人中心查看发布" enabled="false" >
+	    <parameter name="pub_topic_title" value="痛风性踝关节炎1例" />
+	    <parameter name="pub_topic_talk" value="患者，男，38岁，因左踝关节进行性僵硬多年，要求手术，有多年痛风病史，5年前曾因右肘痛风性结节而于本院手术。查体：右肘关节完全伸直时受限，左上肢、右下肢正常，左髋、膝关节活动正常，左踝关节明显僵硬，蹲位时左足跟需上抬，左足跖底不能贴伏地面，左跟腱紧张，踝关节保持在90°位时被动背伸仅10°左右活动范围，足背伸时出现明显的骨档，跟腱两侧饱满。" />
+		<classes>
+		    <class name="com.allinmd.android.PubCheckTopicCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case25-评论-发布/个人中心查看发布/删除" enabled="false" >
+		<classes>
+		    <class name="com.allinmd.android.PubCheckDeleteCommentCase_debug">
+		    </class>
+		</classes>
+	</test>
+	<test name="case26-病例-收藏/取消收藏/个人中心查看收藏" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.CollectCheckCaseCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case27-视频-收藏/取消收藏/个人中心查看收藏" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.CollectCheckVideoCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case28-话题-收藏/取消收藏/个人中心查看收藏" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.CollectCheckTopicCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case29-评论-收藏/取消收藏/个人中心查看收藏" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.CollectCheckCommentCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case30-查看他人个人中心各类资源(发布的病例/话题/回复/收藏等等)" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.CheckDoctorResourceCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case31-添加/取消关注-查看关注/粉丝列表" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.AttentionFansCase">
+		    </class>
+		</classes>
+	</test>
+	<test name="case32-添加/取消订阅-查看订阅" enabled="true" >
+		<classes>
+		    <class name="com.allinmd.android.SubscribeEditCase">
+		    </class>
+		</classes>
+	</test>
+</suite> 
