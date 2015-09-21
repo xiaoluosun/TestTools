@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<infos>
-<ConnInfo>
-	<hostUrl>cre55.ips.cn</hostUrl>
-	<app_key>cre_admin</app_key>
-	<app_secret>116bee7f97a60955fe6eaff870922df2</app_secret>
-	<method>ips2.zptzt.syncorder</method>
-</ConnInfo>
-</infos>

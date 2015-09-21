@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-   <mysql_demo>
-      <url>jdbc:mysql://192.168.2.53/ips_sqrz</url> 
-      <user>ceshi</user>
-      <password>ceshi55db605</password>
-      <driverName>com.mysql.jdbc.Driver</driverName>
-   </mysql_demo>
-</database>

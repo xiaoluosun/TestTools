@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<infos>
-<ConnInfo>
-	<hostUrl>ztkd55.ips.cn</hostUrl>
-	<app_key>ztkd_testing</app_key>
-	<app_secret>a2dc7872c778f401c465e50119f68afb</app_secret>
-	<method>ips2.api.xbillinfo</method>
-</ConnInfo>
-</infos>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<infos>
-<ConnInfo>
-	<hostUrl>ztkd55.ips.cn</hostUrl>
-	<app_key>ztzj_api</app_key>
-	<app_secret>14b0ad903f7bd8d368d63b006e19a88d</app_secret>
-	<method>ips2.ftp.scaninfo</method>
-</ConnInfo>
-</infos>

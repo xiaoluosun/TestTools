@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<infos>
-<ConnInfo>
-	<hostUrl>gateway.cat.cn</hostUrl>
-	<app_key>zd_admin</app_key>
-	<app_secret>d13a6e369b31af0a6fe2a5755179ee7e</app_secret>
-	<method>ips2.api.synctruncktask</method>
-</ConnInfo>
-</infos>

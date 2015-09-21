@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<infos>
-<ConnInfo>
-	<hostUrl>ips2.ips.cn</hostUrl>
-	<app_key>elt_admin</app_key>
-	<app_secret>7c71d5e3bd71ba4476cb488016f77f05</app_secret>
-	<method>ips2.postevent.synclumpsumfee</method>
-</ConnInfo>
-</infos>

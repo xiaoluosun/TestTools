@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<infos>
-<ConnInfo>
-	<hostUrl>g7sdemo.api.xtyon.com</hostUrl>
-	<app_key>alitest_foton</app_key>
-	<app_secret>643bb9af73737298f173c5a091453881</app_secret>
-	<method>foton.ordercenter.syncorders</method>
-</ConnInfo>
-</infos>
