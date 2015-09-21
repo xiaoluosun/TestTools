@@ -1,0 +1,50 @@
+package com.test;
+
+import org.testng.annotations.Test;
+
+import pub.test.ConnectInfo;
+
+public class ZptztSyncOrder extends SimuReqBase {
+	private ConnectInfo conn; 	//接口配置信息
+	private String jsons;		//运单信息信息，json形式
+	private Boolean IsDemo;		//55ordemo环境标志
+	
+	public ZptztSyncOrder(){
+		conn = new ConnectInfo();
+		jsons = "";
+		IsDemo = true;
+	}
+  @Test
+  public void f() {
+	  
+	  String pathRelaUser = "";
+	  if(!IsDemo){
+		//连接接口信息位置
+		String connPath = "\\data\\zptzt\\ips2.zptzt.syncorder_55.xml";
+		
+		//读取连接信息
+		readXmlSqlConn(conn, connPath);
+		
+		pathRelaUser = "\\data\\zptzt\\order_55.xml";
+	
+		
+	  }
+	  else{
+		//连接接口信息位置
+		String connPath = "\\data\\zptzt\\ips2.zptzt.syncorder_demo.xml";
+		
+		//读取连接信息
+		readXmlSqlConn(conn, connPath);
+		
+		pathRelaUser = "\\data\\zptzt\\order_demo.xml";
+	  }
+	  
+	//读取接口字段信息	
+	jsons = Dom4jXml.parserXml(pathRelaUser);
+	
+	//System.out.println(jsons);
+	
+	//模拟接口调用，并输出返回值
+	resGet(jsons, conn);
+  }
+}

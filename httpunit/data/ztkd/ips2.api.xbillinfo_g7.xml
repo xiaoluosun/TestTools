@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<ConnInfo>
+	<hostUrl>121.199.44.6</hostUrl>
+	<app_key>ztkd_testing</app_key>
+	<app_secret>b089af4c903426f174b18e6d0c64004d</app_secret>
+	<method>ips2.api.xbillinfo</method>
+</ConnInfo>
+</infos>

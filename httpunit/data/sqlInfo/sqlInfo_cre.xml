@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<sqlInfo>
+	<mysqlDriver>com.mysql.jdbc.Driver</mysqlDriver>
+	<url>jdbc:mysql://60.28.210.222:3306/ips_standard</url>
+	<mysqlUser>chaxun</mysqlUser>
+	<mysqlPassword>faHdd26O</mysqlPassword>
+</sqlInfo>
+</infos>

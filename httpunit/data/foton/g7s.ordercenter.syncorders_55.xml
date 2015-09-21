@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<ConnInfo>
+	<hostUrl>api.cat.cn</hostUrl>
+	<app_key>foton_admin</app_key>
+	<app_secret>c14954fcb2331c5e2db861e6977ad400</app_secret>
+	<method>foton.ordercenter.syncorders</method>
+</ConnInfo>
+</infos>

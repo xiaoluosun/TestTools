@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<!--任务日期-->
+	<!--2014-04-19-->
+	<b_zxpsenddate>2014-05-07</b_zxpsenddate>
+	<!--org编号，非orgcode-->
+	<!--100186-->
+	<b_orgcode>100186</b_orgcode>
+	<!--运单号-->
+	<!--Y140419001-->
+	<b_zxppcode>Y140507001</b_zxppcode>
+	<!--运单类型-->
+	<!--3-->
+	<b_zxpbilltype>1</b_zxpbilltype>
+	<!--件数-->
+	<!--3-->
+	<b_zxpissuedcount>3</b_zxpissuedcount>
+	<!--品名(商品名称)-->
+	<!--肥皂-->
+	<b_zxpcargoname>肥皂03</b_zxpcargoname>
+	<!--收货人名称-->
+	<!--张三-->
+	<b_zxpshippername>张三</b_zxpshippername>
+	<!--货物重量-->
+	<!--1-->
+	<b_zxpissuedweight>1</b_zxpissuedweight>
+	<!--最晚送货时间-->
+	<!--2014-04-19 20:00:00-->
+	<b_zxptime2>2014-05-07 20:00:00</b_zxptime2>
+	<!--收货人手机-->
+	<!--13801020304-->
+	<b_zxpshippermobile>13801020304</b_zxpshippermobile>
+	<!--收货人地址-->
+	<!--北京市海淀区东王庄小区1号楼-->
+	<b_zxpshipperaddr>北京市海淀区东王庄小区1号楼</b_zxpshipperaddr>
+	<!--客票明细，json格式。其中TIME_CHECK：时间戳，STATU_CHECK：验证状态，此处为0，PASSENGER_NUMBER_ENCRYPT：加密后的身份证信息，PASSENGER_NUMBER：身份证后4位-->
+	<!--[{"PASSENGER_NAME":"刘小平","PASSENGER_NUMBER":"0014","STATU_CHECK":"0","TIME_CHECK":"1397310672","PASSENGER_NUMBER_ENCRYPT":"幢背贝案繁鞍0014"}]-->
+	<!--投递员姓名-->
+	<!--马如虎-->
+	<b_zxppostmanname1>杨海红</b_zxppostmanname1>
+	<!--货物体积-->
+	<!--11-->
+	<b_zxpissuedvolume>11</b_zxpissuedvolume>
+	<b_zxpptype>经济快递</b_zxpptype>
+</BillInfo>
+</infos>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderInfo>
+	<!--任务号,调度单号-运单号-->
+	<!-- TASK -->
+	<taskcode>TASK</taskcode>
+	<!--调度单号-->
+	<shipnumber>DD</shipnumber>
+	<!--运单号-->
+	<podnumber></podnumber>
+	<!--车牌号-->
+	<!-- 轨A00001 -->
+	<carnum>轨A00001</carnum>
+	<!--始发地-->
+	<startpoint>轨迹起点</startpoint>
+	<!--目的地-->
+	<endpoint>轨迹终点</endpoint>
+	<!--TMS发运确认时间-->
+	<!-- 2014-11-19 10:00:00 -->
+	<tasktime>2014-11-20 10:00:00</tasktime>
+	<!--机构id(2000EZ,多个机构【发运部】)-->
+	<!-- 2000AI01 -->
+	<orgcode>2000AI01</orgcode>
+	<!--委托方-->
+	<entruster>一汽</entruster>
+	<!--VIN数量(5)-->
+	<vinnum>0</vinnum>
+	<!--VIN码：V1,V2,V3,V4,V5-->
+	<vincontent>LRDV7PEC0EH203184,LRDV7PEC0EH203185,LRDV7PEC0EH203186,LRDV7PEC0EH203187</vincontent>
+	<!--承运商名称-->
+	<carriername>北京盛世祥</carriername>
+	<!--承运商代码-->
+	<carriercode>CYS001</carriercode>
+	<!--经销商名称-->
+	<distributorname>经销商222</distributorname>
+	<!--经销商代码-->
+	<distributorcode>JXS1</distributorcode>
+	<!--司机姓名-->
+	<drivername>老罗</drivername>
+	<!--司机电话-->
+	<drivertel>13801020304</drivertel>
+	<!--add增加(判断重复);update更新(除已到达外任意条件可以更新,如果车辆无gps不建立任务,不进行更改);del删除(只传递任务号,无条件删除)-->
+	<operatetype>add</operatetype>
+</OrderInfo>

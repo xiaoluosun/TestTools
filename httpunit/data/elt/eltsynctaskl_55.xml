@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<!--唯一识别标志-->
+	<taskid>20140603Q123000003</taskid>
+	<!--车牌号-->
+	<vehicleno>京AD3774</vehicleno>
+	<!--车次号-->
+	<carno>Q123</carno>
+	<!--班线ID(与startsiteid和endsiteid 有其一即可，优先判断lineid)-->
+	<lineid>Q123</lineid>
+	<!--计划出发时间(图定)-->
+	<starttime>2014-06-03 11:00:00</starttime>
+	<!--出发站点ID-->
+	<startsiteid></startsiteid>
+	<!--到达站点ID-->
+	<endsiteid></endsiteid>
+	<!--司机姓名-->
+	<drivername></drivername>
+	<!--司机姓名2-->
+	<drivername2></drivername2>
+	<!--挂车车牌号-->
+	<trailercarnum></trailercarnum>
+	<!--是否删除(1:删除,0:添加或修改)(删除时只需传taskid)-->
+	<isdelete>0</isdelete>
+</BillInfo>
+</infos>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<OrderInfo>
+	<!--车牌号-->
+	<carnum>粤AN2420</carnum>
+	<!--组织编码，orgcode-->
+	<orgcode>100217</orgcode>
+	<!--车辆编号-->
+	<truckcode>AN2420</truckcode>
+	<!--是否是车头（0是车头，1挂车）-->
+	<isheadstock>0</isheadstock>
+	<length>10</length>
+	<weight>15</weight>
+	<volumn>20</volumn>
+	<!--车辆颜色-->
+	<truckcolor>红色</truckcolor>
+	<!--每日行驶里程-->
+	<mileagerefer>200.00</mileagerefer>
+	<!--每日行驶时间-->
+	<runtimerefer>640</runtimerefer>
+</OrderInfo>
+</infos>

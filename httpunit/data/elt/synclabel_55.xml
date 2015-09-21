@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<!--唯一识别标志-->
+	<siteid>cscs</siteid>
+	<!--线路的起点、途经点、终点的name-->
+	<name>长沙分拨中心(测试)</name>
+	<!--所属机构编码(如无法匹配机构则默认顶级机构)-->
+	<orgnum>00</orgnum>
+	<!--标注点类型(0:区域,1:标点)请传0-->
+	<type>0</type>
+	<!--是否站点(0:是,1:否) 请传0-->
+	<issite>0</issite>
+	<!--是否解析地址(0:否,1:是) 请传0-->
+	<isresolve>0</isresolve>
+	<!--是否删除(1:删除,0:添加或修改)(删除时只需传siteid)-->
+	<isdelete>1</isdelete>
+</BillInfo>
+</infos>

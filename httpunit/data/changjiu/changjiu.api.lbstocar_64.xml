@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<ConnInfo>
+	<hostUrl>api.cat.cn</hostUrl>
+	<app_key>changjiu_padmin</app_key>
+	<app_secret>667614fb8e604c224c25348daaa85355</app_secret>
+	<method>changjiu.api.lbstocar</method>
+</ConnInfo>
+</infos>

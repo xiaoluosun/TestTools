@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<!--更新时间-->
+	<!--2014-05-14 17:00:00-->
+	<updatetime>2014-05-15 11:40:00</updatetime>
+	<!--任务类型，接：1；送：3-->
+	<!--3-->
+	<tasktype>3</tasktype>
+</BillInfo>
+</infos>

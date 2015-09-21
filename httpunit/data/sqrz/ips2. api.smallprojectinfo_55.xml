@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<ConnInfo>
+	<hostUrl>sqrz55.ips.cn</hostUrl>
+	<app_key>sqrz_admin</app_key>
+	<app_secret>98b180b4253673260c7d61ae49666d0d</app_secret>
+	<method>ips2.api.smallprojectinfo</method>
+</ConnInfo>
+</infos>

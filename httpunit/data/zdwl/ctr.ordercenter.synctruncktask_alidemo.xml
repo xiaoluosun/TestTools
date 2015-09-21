@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<ConnInfo>
+	<hostUrl>g7sdemo.api.xtyon.com</hostUrl>
+	<app_key>zd_api</app_key>
+	<app_secret>759de9c0f8083a902d98f97f41bd3a1f</app_secret>
+	<method>ctr.ordercenter.synctruncktask</method>
+</ConnInfo>
+</infos>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<OrderInfo>
+	<customcode>10000</customcode>
+	<!-- 小项目编号-->
+	<SecondprojectNo>WL2014061010120-2</SecondprojectNo>
+	<!-- 项目名称-->
+	<ProjectName>锦州港物流小项目2</ProjectName>
+	<!-- add（添加）\edit（修改）\（del）删除操作类型-->
+	<Operate>add</Operate>
+</OrderInfo>
+</infos>

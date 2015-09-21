@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<taskcode>34948</taskcode>
+	<match_status>1</match_status>
+	<station_code>101</station_code>
+	<station_name>东城</station_name>
+	<remark>测试</remark>
+</BillInfo>
+</infos>

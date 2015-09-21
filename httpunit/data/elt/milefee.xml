@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<milefee>
+	<!--票号-->
+	<!--Y140217001-1-->
+	<ticketno>YJ140603001001</ticketno>
+	<!--运价-->
+	<!--200-->
+	<lumpsumfee>200</lumpsumfee>
+	<!--里程-->
+	<!--100-->
+	<mileage>100</mileage>
+</milefee>
+</infos>

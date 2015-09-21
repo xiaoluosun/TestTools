@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<ConnInfo>
+	<hostUrl>kerry55.ips.cn</hostUrl>
+	<app_key>kerry_admin</app_key>
+	<app_secret>71fe62422eddfff2c2f05b2b005dfdf1</app_secret>
+	<method>ips2.postevent.synctask</method>
+</ConnInfo>
+</infos>

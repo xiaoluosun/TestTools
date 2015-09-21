@@ -1,0 +1,35 @@
+<project name="sample" default="test" basedir=".">
+	<property name="build.class" value="build/class"/>
+	<property name="src.dir" value="src"/>
+	<property name="lib" value="./lib"/>
+	<property name="testng.file" value="testng_cre_order.xml"/>
+
+	<!-- COMPILE TESTS-->
+	<path id="cpath">
+		<fileset dir="${lib}" includes="*.jar" />
+	</path>
+
+	<path id="runpath">
+		<path refid="cpath"/>
+		<pathelement location="${build.class}"/>	
+	</path>
+
+	<target name="compile">
+		<echo message="compiling tests"/>
+		<mkdir dir="${build.class}"/>
+		<javac classpathref="cpath"	srcdir="${src.dir}" destdir="${build.class}" encoding="utf-8"/>
+	</target>
+
+	<taskdef name="testng"
+		classname="com.beust.testng.TestNGAntTask"
+		classpathref="runpath">
+	</taskdef>
+
+	<!-- RUN TESTS-->
+	<target name="test" depends="compile">
+	        <testng outputdir="test-output" classpathref="runpath" delegateCommandSystemProperties="true">
+	            <xmlfileset dir="${src.dir}" includes="${testng.file}"/>
+	        </testng>
+	</target>
+
+	</project> 

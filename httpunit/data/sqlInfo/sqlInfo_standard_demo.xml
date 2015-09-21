@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+	<sqlInfo>
+		<mysqlDriver>com.mysql.jdbc.Driver</mysqlDriver>
+		<url>jdbc:mysql://60.28.206.73:3306/ips2demo</url>
+		<mysqlUser>innertmp</mysqlUser>
+		<mysqlPassword>in@@#$789</mysqlPassword>
+	</sqlInfo>
+</infos>

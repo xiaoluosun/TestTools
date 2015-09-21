@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderInfo>
+	<!--发车计划唯一识别标志-->
+	<!--141223001-->
+	<taskid>141226002</taskid>
+	<!--车牌号-->
+	<!--嘉A00002-->
+	<vehicleno>嘉A00002</vehicleno>
+	<!--车次号-->
+	<!---->
+	<carno></carno>
+	<!--班线ID(与startsiteid和endsiteid 有其一即可，优先判断lineid)-->
+	<!--bj-tj-->
+	<lineid>bj-tj</lineid>
+	<!--计划出发时间-->
+	<!--2014-12-23 16:00:00-->
+	<starttime>2014-12-26 10:00:00</starttime>
+	<!--出发站点ID-->
+	<!--bjz-->
+	<startsiteid></startsiteid>
+	<!--到达站点ID-->
+	<!--tjz-->
+	<endsiteid></endsiteid>
+	<!--票数-->
+	<!--10-->
+	<ticketnum>10</ticketnum>
+	<!--毛重-->
+	<!--1000-->
+	<grossweight>1000</grossweight>
+	<!--计费重-->
+	<!--800-->
+	<chargeableweight>800</chargeableweight>
+	<!--司机姓名-->
+	<!---->
+	<drivername></drivername>
+	<!--司机2姓名-->
+	<!---->
+	<drivername2></drivername2>
+	<!--随车电话-->
+	<!---->
+	<mobile></mobile>
+	<!--重量-->
+	<!---->
+	<weight></weight>
+	<!--体积-->
+	<!---->
+	<cubage></cubage>
+	<!--挂车车牌号-->
+	<!---->
+	<trailercarnum></trailercarnum>
+	<!--是否删除(1:删除,0:添加或修改)(删除时只需传taskid)-->
+	<!---->
+	<isdelete></isdelete>
+</OrderInfo>

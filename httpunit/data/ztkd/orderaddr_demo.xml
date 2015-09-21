@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<!--单号-->
+	<!--Y140423001-->
+	<o_pcode>140929005</o_pcode>
+	<!--任务所属机构代码，找小平确认是orgcode-->
+	<!--100186-->
+	<t_orgcode>100186</t_orgcode>
+	<!--1:接;2:扫;3:送;4:转-->
+	<!--3-->
+	<t_tasktype>3</t_tasktype>
+	<!--收货人地址，请根据收发货类型确认是填写收货人地址或者发货人地址-->
+	<!--北京市海淀区东王庄小区1号楼-->
+	<o_consigneeaddr>北京市海淀区东王庄小区2号楼</o_consigneeaddr>
+	<!--自定义数值5，这里小平解释没有特殊意义，只为了跟以前的接口入参保持一致-->
+	<!--1-->
+	<o_intval5>1</o_intval5>
+</BillInfo>
+</infos>

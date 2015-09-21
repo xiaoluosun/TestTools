@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+<BillInfo>
+	<!--线路唯一识别标志-->
+	<lineid>Ycsline</lineid>
+	<!--班线类型（1干线/2支线/3短驳）(默认1，传非法值取1)-->
+	<usetype>1</usetype>
+	<!--所属机构编码(如无法匹配机构则默认顶级机构)-->
+	<orgnum>00</orgnum>
+	<!--出发站点ID-->
+	<startsiteid>05012</startsiteid>
+	<!--到达站点ID-->
+	<endsiteid>15012</endsiteid>
+	<!--线路名称(为空时名称默认为出发站到达站组合)-->
+	<name>黄村中心站干线-石家庄分拨中心</name>
+	<!--线路里程(千米)-->
+	<mile>100</mile>
+	<!--运行时间(分)-->
+	<runtime>100</runtime>
+	<!--是否删除(1:删除,0:添加或修改)(删除时只需传lineid)-->
+	<isdelete>0</isdelete>
+	<!--途经点明细-->
+	<passinfos>[{"passdistance":100,"passruntime":300,"passsiteid":"03012","passsort":1,"passstoptime":20}]</passinfos>
+</BillInfo>
+</infos>
